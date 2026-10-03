@@ -1,0 +1,1 @@
+{\n  "version": 2,\n  "builds": [\n    {\n      "src": "app/main.py",\n      "use": "@vercel/python"\n    }\n  ],\n  "routes": [\n    {\n      "src": "/(.*)",\n      "dest": "app/main.py"\n    }\n  ],\n  "env": {\n    "PYTHONPATH": "/var/task"\n  }\n}\n
